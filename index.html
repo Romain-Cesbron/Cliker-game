@@ -1,0 +1,356 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+    </head>
+
+
+    <body>
+        <header>
+            <div class="logo_container">
+                <img src="images/wikipedia.png">
+                <img src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg" alt="" class="logo_wiki">         
+            </div>
+            <div>
+                <input type="text" class="input_search" placeholder="Find the funniest Wikipedia article"><button id="click_bt" class="click_bt">click</button>
+            </div>
+            <div class="user_container" id="user_container">
+                <div class='username_display' id="username_display">User Name</div>
+                <img class="user_img" src="images/user_img.png">
+                <div class="user_container_dropdown" id="user_container_dropdown">
+                    <div class="user_container_object">
+                        <input type="text" placeholder="Change your username" id="Change_username"><button id="Change_username_bt">Validate</button>
+                        <h4>Time played : <span id="Time_played_html"></span></h4>
+                    </div>
+                    <h2>Leaderboard</h2>
+                    <ol class="leaderboard_list" id="leaderboard_list">
+                    </ol>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main_container">
+            <menu class="menu_container">
+                <div class="menu_sub_title">
+                    <h4 class="bold"> Main menu </h1>
+                </div>
+                    <h4 class="wiki_link_active" id="NOU_click">Number of users : <span class="number" id="NOU_Display"></span> </h4>
+                    <h4 class="wiki_link_active">Money : <span class="number" id="money_Display"></span></h4>
+                    <h4 class="wiki_link_active">Money generated/s : <span class="number" id="Money_Generated_Display"></span></h4>
+                    <h4 class="wiki_link_active" id="NOC_click">Number of contributors ⮛ </h4>
+                        <div class="NOC_container" id="NOC_container">
+                            <ul class="liste_contributors">
+                                <li><span id="NOC_1"></span> retired human<button class="NOC_button NOC_1" id="NOC_button_1">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown1">
+                                    <p>Price:</p>
+                                </div>
+                                <li><span id="NOC_2"></span> tennager<button class="NOC_button NOC_2" id="NOC_button_2">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown2">
+                                    <p>Pricess:</p>
+                                </div>
+                                <li><span id="NOC_3"></span> Enthusiasts<button class="NOC_button NOC_3" id="NOC_button_3">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown3">
+                                    <p>Pricess:</p>
+                                </div>
+                                <li><span id="NOC_4"></span> Insiders<button class="NOC_button NOC_4" id="NOC_button_4">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown4">
+                                    <p>Pricess:</p>
+                                </div>
+                                <li><span id="NOC_5"></span> Scholars<button class="NOC_button NOC_5" id="NOC_button_5">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown5">
+                                    <p>Pricess:</p>
+                                </div>
+                                <li><span id="NOC_6"></span> Archivists<button class="NOC_button NOC_6" id="NOC_button_6">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown6">
+                                    <p>Pricess:</p>
+                                </div>
+                                <li><span id="NOC_7"></span> Marketers<button class="NOC_button NOC_7" id="NOC_button_7">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown7">
+                                    <p>Pricess:</p>
+                                </div>
+                                <li><span id="NOC_8"></span> Evil-doers<button class="NOC_button NOC_8" id="NOC_button_8">Buy</button></li>
+                                <div class="NOC_dropdown" id="NOC_dropdown8">
+                                    <p>Pricess:</p>
+                                </div>
+                            </ul>
+                        </div>
+                    <h4 class="wiki_link_active" id="calender_click">Donate ⮛</h4>
+                    <div>
+                        <table class="calender_container" id="calender_container">
+                            <thead>
+                                <tr class="grey">
+                                    <th class="calender_title grey">Day</th>
+                                    <th class="calender_title grey">Holiday</th>
+                                    <th class="calender_title grey">Big Event</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="day_selector LDS1">Mo</th>
+                                    <th class="LDS1 holiday font_normal"></th>
+                                    <th class="LDS1 news font_normal"></th>
+                                </tr>
+                                <tr>
+                                    <th class="day_selector LDS2 ">Th</th>
+                                    <th class="LDS2 holiday font_normal" ></th>
+                                    <th class="LDS2 news font_normal"></th>
+                                </tr>
+                                <tr>
+                                    <th class="day_selector LDS3 ">We</th>
+                                    <th class="LDS3 holiday font_normal"></th>
+                                    <th class="LDS3 news font_normal"></th>
+                                </tr>
+                                <tr>
+                                    <th class="day_selector LDS4  ">Tu</th>
+                                    <th class="LDS4 holiday font_normal"></th>
+                                    <th class="LDS4 news font_normal"></th>
+                                </tr>
+                                <tr>
+                                    <th class="day_selector LDS5  ">Fr</th>
+                                    <th class="LDS5 holiday font_normal"></th>
+                                    <th class="LDS5 news font_normal"></th>
+                                </tr>
+                                <tr>
+                                    <th class="day_selector LDS6  ">Sa</th>
+                                    <th class="LDS6 holiday font_normal"></th>
+                                    <th class="LDS6 news font_normal"></th>
+                                </tr>
+                                <tr>
+                                    <th class="day_selector LDS7  ">Su</th>
+                                    <th class="LDS7 holiday font_normal"></th>
+                                    <th class="LDS7 news font_normal"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h4 class="wiki_link_active" id="GameReset">Reset the game ⮛
+                    </h4>
+                    <div class="reset_container" id="reset_container">
+                        <div>
+                            <div class="reset_container_checkkox">
+                                <input type="checkbox" id="checkbox1">
+                                <h4 class="Line_height_1">I understand that pressing the button will reset the game</h4>
+                            </div>
+                            <div class="reset_container_checkkox">
+                                <input type="checkbox" id="checkbox2">
+                                <h4 class="Line_height_1">Please also press this</h4>
+                            </div>
+                            <div class="reset_container_checkkox">
+                                <input type="checkbox" id="checkbox3">
+                                <h4 class="Line_height_1">You won't have any bonus by pressing this</h4>
+                            </div>
+                        </div>
+                        <button class="reset_game_bt">Reset the Game</button>
+                    </div>
+
+            </menu>
+            <div class="article_container">
+                <div class="welcome_container">
+                    <h1>Welcome to <span class="wiki_link">Wikipedia</span></h1>
+                    <h3>the <span class="wiki_link">free encyclopedia</span> that <span class="wiki_link">anyone can edit</span>.</h3>
+                    <h3>Number of <span class="wiki_link">Wikipedia</span> articles : <span id="click_nb"></span></h3>
+
+                </div>
+                <div>
+                    <div class="title_container">
+                        <h1  class="big_title_wiki_article italic">Cookie clicker</h1>
+                        <div class="language_dropdown" id="language_dropdown">
+                            <div class="flex language_v_icon">
+                                <img src="images/icon_wiki_language.png" class="image_icon_wiki_language">
+                                <span id="language_v">1 languages ⮛</span>
+                            </div>
+                            <div class="language_dropdown_container" id="language_dropdown_container">
+                                <ul class="liste_language" id="liste_language">
+                                    <li>English</li>
+                                </ul>
+                                <button class="language_add" id="language_add">+ Add languages</button><br><h4>
+                                <span class="black">Price </span><span class="number" id="language_add_price"></span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article_text_container" >
+
+                        <div class="Title_and_para_container">
+
+                            <div class="infobox_container">
+                                <h2 class="italic">Cookie Clicker</h2>
+                                <div class="cookie_logo">
+                                    <img src="images/PerfectCookie.webp" class="cookie_center" id="cookie_center">
+                                    <div class="more_cursor" id="more_cursor">
+                                        <!-- <img src="images/cursosCookie.png" id="cursors" class="cursors"> -->
+                                    </div>
+                                    
+                                </div>
+                                <h5><span class="wiki_link">Steam</span> storefront header</h5>
+                                <table class="table_infobox_container">
+
+                                    <tr class="test">
+                                        <th class="wiki_link">Publisher(s)</th>
+                                        <th class="font_normal">
+                                            DashNet
+                                            Playsaurus (Steam release)
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="wiki_link">Designer(s)</th>
+                                        <th class="font_normal">Julien Thiennot</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="wiki_link">Programmer(s)</th>
+                                        <th class="font_normal">Julien Thiennot</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="wiki_link">Composer(s)</th>
+                                        <th class="font_normal">Daniel Rosenfeld</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="wiki_link">Platform(s)</th>
+                                        <th class="font_normal">	
+                                            Android
+                                            Microsoft Windows
+                                            Web browser</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="wiki_link">Release</th>
+                                        <th class="font_normal">	
+                                            WW: August 8, 2013<br>
+                                            Android<br>
+                                            WW: October 5, 2020<br>
+                                            Steam<br></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="wiki_link">Genre(s)</th>
+                                        <th class="font_normal">Incremental</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="wiki_link">Mode(s)</th>
+                                        <th class="font_normal">Single-player</th>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+
+                            <p>
+                                Cookie Clicker is a 2013 <span class="wiki_link">incremental game</span> created by French <span class="wiki_link">programmer</span> Julien "Orteil" Thiennot. The user initially clicks on a big cookie on the screen, earning a single cookie per click. They can then use their earned cookies to purchase assets such as "cursors" and other "buildings" that automatically produce cookies. Upgrades are also available and can improve the efficiency of clicks and buildings, among many other mechanics that allow the user to earn cookies in different ways. The game lacks a conventional ending.
+                                The game has a dedicated fanbase. Though the original version was coded in one night, Cookie Clicker is regularly updated. It has been widely described as addictive, and has been credited with playing a role in the emergence of  
+                            <span class="wiki_link_active" id="wiki_link_active">idle gaming
+                                <span class="WL_idle_gaming black">
+                                        <span>Cursors Price<br></span><span class="number" id="Cursor_Price"></span><br>
+                                        <button class="buy_cursor" id="buy_cursor">BUY</button><br>
+                                        <!--<button class="cursor_vitesse" id="cursor_vitesse">cursor vitesse</button>-->
+
+                                </span>
+                            </span>
+                            </p>
+                        
+                            <div class="title_container">
+                                <h1  class="title_wiki_article">Gameplay</h1>
+                            </div>
+                           
+                            <p>
+                                At first, the player clicks on a large cookie, earning one cookie per click. With these cookies, the player can buy additional means of production such as cursors, grandmas, farms, mines, factories, banks, temples, and several more that automatically generate cookies. Prices increase exponentially, with each asset costing 15% more than the last-purchased asset of the same type. The player may also purchase upgrades to increase cookie production for these buildings. Golden cookies, small cookies that appear in random locations and fade away after several seconds, appear periodically and grant effects, such as a temporary increase in the rate of production, if clicked before they disappear.
+                            </p>
+                            <p>
+                                After earning a certain number of cookies, the player can 'ascend', losing their progress but earning heavenly chips and prestige levels. Prestige levels add a permanent boost (+1% per level) to the rate of cookie production in future play-throughs, while heavenly chips can be spent on a wide variety of prestige upgrades. However, the number of cookies needed to unlock the next prestige level goes up <span class="wiki_link">proportionally</span> with the cube of the level, becoming harder to attain as more are acquired. Other game mechanics include "wrinklers" (eldritch beasts which reduce cookie production, but can be popped by clicking them, returning all the cookies it digested with interest), Krumblor the Cookie Dragon, <span class="wiki_link">mini games</span>, and sugar lumps (which take 24 hours to coalesce and are used to level up buildings and boost their production rate). Achievements can be earned by completing various tasks or goals, such as reaching a certain number of total cookies produced, owning a particular number of buildings of a certain type or clicking a certain number of golden cookies. Upon reaching a certain number of achievements, the player unlocks different colors of milk that appear below the cookie. With "kitten" upgrades, the player earns extra production depending on their total achievements. Additionally, seasonal events occur during their respective holidays which come with more upgrades and cookies to unlock.
+                            </p>
+                            <p>
+                                The game features geometric or <span class="wiki_link">exponential growth</span>: the player begins by baking individual cookies, but can quickly reach billions of cookies,[1] and eventually attain <span class="wiki_link">duodecillions</span> (1039) of cookies or beyond. Though the game has no clear ending,[2] it has over five hundred achievements,[3] and users may aim to reach milestone numbers of cookies.[4]
+                            </p>
+                                    
+                            <div class="title_container">
+                                <h1  class="title_wiki_article">Development</h1>
+                            </div>
+                            <p>
+                                Julien Thiennot, also known as Orteil, created Cookie Clicker on August 8, 2013. Written in a single evening, the game was posted in a link on <span class="wiki_link">4chan</span>, and garnered 50,000 players within hours.[2] A month after the game's initial release, it had over 200,000 players per day.[5] Orteil later wrote that traffic had peaked at 1.5 million hits in one day during August 2013, and by January 2014, Cookie Clicker was still getting a steady 225,000 hits per day.[6] The game has had continual updates since its release, notably the "legacy" update in February 2016 and the "spiritual" update in July 2017.[7] On October 25, 2018, Orteil launched the game's <span class="wiki_link">Patreon</span> page, with the intent to develop Cookie Clicker and other Dashnet games becoming a full-time job.[8] On August 8, 2019, the mobile beta for Cookie Clicker was released for Android devices after a long delay.[9]
+                            </p>
+                            <p>
+                                Cookie Clicker is similar to <span class="wiki_link">Cow Clicker</span>, a previously existing <span class="wiki_link">idle game</span> created by Ian Bogost. Bogost has called Cookie Clicker "the logical conclusion of Cow Clicker".[5] Orteil later released other idle games such as: Idle Game Maker, a tool allowing customized idle games to be made without coding knowledge;[10] <span class="wiki_link">AdventureQuest</span> Dragons, a mobile game created with Artix Entertainment; and NeverEnding Legacy.
+                            </p>
+                            <p>
+                                Steam release
+                                On August 8, 2021, Orteil announced on Twitter a Steam release of Cookie Clicker, with the planned release date of September 1, 2021.[11] The game was released on Steam on its originally announced release date.[4] The release also included a soundtrack composed by <span class="wiki_link">C418</span>.[12][13] It reached over 60,000 concurrent players shortly after its release, within the top 15 of Steam games at the time.[4]
+
+                            </p>
+                            <div class="title_container">
+                                <h1  class="title_wiki_article">Analysis</h1>
+                            </div>
+                            <p>
+                                In an <span class="wiki_link">IGN</span> article, Cookie Clicker is credited as one of the few games to have played a major role in the establishment of the genre of idle gaming (also called incremental gaming).[1] An article in The <span class="wiki_link">Kernel</span> describes it as "probably the best-known" game in the genre.[2]
+                            </p>
+                            <p>
+                                In an issue of Digital Culture & Society, Paolo Ruffino notes that the game is "supposed to be a parody of <span class="wiki_link">FarmVille</span>" (a popular game which Ruffino says could be played easily with an algorithm, as the optimal action is always obvious), but that it is "equally addictive". Thus, the game "explores the absence of human agency".[14] Ian Bogost, creator of Cow Clicker, similarly notes that "Cookie Clicker isn't a game for a human, but one for a computer to play while a human watches (or doesn't)."[5] Cookie Clicker has been said by reviewers to be addictive,[1][2] and its fanbase have been described as "obsessive"[15] and "almost cultish".[2] Roisin Kiberd notes that fans of the game have pointed out that playing the game is bad for the environment (due to the computers being left on around the clock) and caused reduced efficiency at work.[2]
+                            </p>
+                            <p>
+                                However, due to their mockingly simple mechanics, idle games are also considered by many of being relatively simple or, as stated in an IGN article, "super dumb".[1] Games such as Cookie Clicker have used this blend of simplicity and complexity to create a new genre that some may not even consider as actual games. Orteil himself described his works as "non-games".[15]
+                            </p>
+                            <div class="title_container">
+                                <h1  class="title_wiki_article">Reception</h1>
+                            </div>
+                            <p>
+                                Justin Davis of IGN describes Cookie Clicker as the "greatest Idle Game" and says it "probably achieves the best balance of power yet [...] so that every step of the way you feel like you're flying, generating cookies so much faster than you were before. But you still can't wait until that next major milestone is finally within reach".[1] Boing Boing reviewed Cookie Clicker as a "highly-addictive browser game".[18] <span class="wiki_link">Polygon</span>Polygon has described the game as "intriguing", and its fan base as "obsessive".[15] Destructoid emphasizes that it is "centered around the pursuit and accumulation of vast wealth", providing players with "the illusion of progress, without any substantial advancement actually being made."[19] An academic work published by University of Minnesota Press analyzed Cookie Clicker as an object of new media art that subverts "the experimental opacity of digital media" and forces the person experiencing it to "fac[e] the expression of digital historical experience: the broad sense of existential disenfranchisement characterizing so much of the experience of contemporary technology".[20] Sebastian Deterding, a professor of design engineering at Imperial College London,[21] acknowledges that the game exists at one level as a parody and ridicule of Farmville and EverQuest,[22]: 200  but said the game transcends this, engaging in <span class="wiki_link">gamification</span> of progress, allowing players to "keep at a single 'silly' pursuit for hundreds of hours [engaged in] a real, self-regulatory skill",[22]: 204  and that its players can and do play it "out of enlightened existential spite", perhaps including the author who acknowledges baking octillions of cookies over thousands of hours of gameplay, "orders of magnitude more time...than any other video game in my life".[22]: 206 
+                            </p>
+                            <div class="title_container">
+                                <h1  class="title_wiki_article">References</h1> 
+                                <div class="reference_dropdown_container">
+                                    <button class="reference_dropdown_bt" id="references_add_bt">add references</button>
+                                    <div class="reference_dropdown">
+                                        <h4 class="Line_height_1">This button reset the game but adds a multiplier<br>
+                                        <span class="number" id="reference_add_price">Price :</span></h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <ol id="references_ol">
+                            </ol>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer_container">
+                <p>This page was last edited on 20 January 2024, at 07:39.</p>
+                <p>Text is available under the Creative Commons Attribution-ShareAlike License 4.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+                <div class="container_footer_link">
+                    <span class="wiki_link margin_right">Privacy</span> 
+                    <span class="wiki_link margin_right">policyAbout</span>
+                    <span class="wiki_link margin_right">Disclaimers</span>
+                    <span class="wiki_link margin_right">WikipediaCode</span>
+                    <span class="wiki_link margin_right">Contact</span>
+                    <span class="wiki_link margin_right">Code of Conduct</span>
+                    <span class="wiki_link margin_right">Developers</span>
+                    <span class="wiki_link margin_right">Statistics</span>
+                    <span class="wiki_link margin_right">Cookie statement</span>
+                    <span class="wiki_link margin_right">Mobile view</span>
+                </div>
+            </div>
+        </footer>
+        <div class="first_message" id="first_message">
+            <div class="text_first_message">
+                <h3 class="Line_height_13">To all our readers, allow us to be direct: You've stumbled upon a Clicker game with a singular objective – to create 6,781,547 articles. Begin by clicking the designated 'Click' button, now occupying the space of the conventional search button. Each article generated not only expands our user base but also boosts revenue. As you progress, you'll unlock mechanisms for automatic article generation, setting the stage for exponential growth.
+                    <br><br>Race against time to reach 6,781,547 articles before anyone else, and your reward? Unlocking access to the funniest Wikipedia article ever!
+                </h3>
+            </div>
+            <button class="start_game" id="start_game">Start the game</button>
+        </div>
+        <div class="felicitation_message" id="felicitation_message">
+            <div class="felicitation_message_text">
+                <h3 class="Line_height_13">Congratulation on winning the game by pressing the final button you will be redirect to the funniest Wikipedia article ever !
+                </h3>
+            </div>
+            <button class="finish_game" id="finish_game">Go to the funniest Wikipedia article </button>
+        </div>
+        
+
+
+
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
